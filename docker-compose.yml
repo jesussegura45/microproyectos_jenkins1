@@ -2,7 +2,7 @@ version: "3.7"
 services:
   microproyectos:
     container_name: microproyectos
-    image: jesussegura/microproyectos:v1
+    image: microproyectos:v1
     build:
       context: .
     ports:
@@ -15,7 +15,7 @@ services:
     
   balanceador:
     container_name: balanceador_proyectos
-    image: jesussegura/balanceador_proyectos:v1.0
+    image: balanceador_proyectos:v1.0
     build:
       context: ./balanceador
     ports:
